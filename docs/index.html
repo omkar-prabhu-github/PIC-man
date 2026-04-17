@@ -302,11 +302,41 @@
           width: 100%;
           max-height: none;
           flex-direction: row;
-          flex-wrap: wrap;
-          gap: 10px;
+          flex-wrap: nowrap;
+          gap: 5px;
         }
         .sidebar-box {
-          padding: 8px;
+          padding: 6px;
+          flex: 1;
+          min-width: 0;
+        }
+        .controls-box {
+          display: none !important;
+        }
+        /* Mobile Scaling for Sidebar Elements */
+        .sidebar-box h3 {
+          font-size: 10px;
+        }
+        #hud {
+          font-size: 10px;
+        }
+        .ghost-indicator {
+          flex-direction: column;
+          gap: 5px;
+          margin-top: 10px;
+        }
+        .ghost-indicator img {
+          width: 30px;
+          height: 30px;
+        }
+        #currentGhostName {
+          width: auto;
+          font-size: 10px;
+          text-align: center;
+        }
+        #muteButton {
+          width: 30px;
+          height: 30px;
         }
         .mobile-controls {
           display: flex;
@@ -382,7 +412,7 @@
       </div>
 
       <!-- Controls Box -->
-      <div class="sidebar-box">
+      <div class="sidebar-box controls-box">
         <h3>CONTROLS</h3>
         <ul class="controls-list">
           <li><strong>P</strong> - Pause game</li>
