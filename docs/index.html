@@ -309,21 +309,31 @@
           padding: 6px;
           flex: 1;
           min-width: 0;
+          align-items: center;
         }
         .controls-box {
           display: none !important;
         }
         /* Mobile Scaling for Sidebar Elements */
         .sidebar-box h3 {
-          font-size: 10px;
+          font-size: 9px;
+          margin-bottom: 5px;
         }
         #hud {
           font-size: 10px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        #ghostKills {
+          margin-top: 5px !important;
         }
         .ghost-indicator {
           flex-direction: column;
           gap: 5px;
-          margin-top: 10px;
+          margin-top: 5px;
+          align-items: center;
         }
         .ghost-indicator img {
           width: 30px;
@@ -337,9 +347,23 @@
         #muteButton {
           width: 30px;
           height: 30px;
+          margin-top: 5px !important;
         }
         .mobile-controls {
           display: flex;
+        }
+        /* Fix overlays jumping out of bounds */
+        #gameEndOverlay h2 {
+          font-size: 35px !important;
+          text-align: center !important;
+        }
+        #endStats {
+          font-size: 12px !important;
+        }
+        #pauseMessage, #readyMessage {
+          font-size: 35px !important;
+          text-align: center !important;
+          width: 100%;
         }
       }
     </style>
