@@ -204,7 +204,7 @@ function drawGameEnd() {
 }
 
 tileMap.setCanvasSize(canvas);
-setInterval(gameLoop, 1000 / 140);
+setInterval(gameLoop, 1000 / 100);
 
 // Player controls the active ghost with Arrow Keys, WASD, and Shift to cycle
 document.addEventListener("keydown", (event) => {
